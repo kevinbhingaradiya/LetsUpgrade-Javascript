@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center">Question 1 Answer</h1>
+<h2>My Text</h2>
+<p>The corona virus family causes illnesses ranging from the common cold to more severe diseases such as severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS), according to the WHO They circulate in animals and some can be transmitted between animals and humans. Several coronaviruses are circulating in animals that have not yet infected humans.The new coronavirus, the seventh known to affect humans, has been named COVID-19<p>
+<p>Click the button to search a string for "corona", and display the position of the match.</p>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "The corona virus family causes illnesses ranging from the common cold to more severe diseases such as severe acute respiratory syndrome (SARS) and Middle East respiratory syndrome (MERS), according to the WHO They circulate in animals and some can be transmitted between animals and humans. Several coronaviruses are circulating in animals that have not yet infected humans.The new coronavirus, the seventh known to affect humans, has been named COVID-19"
+  var n = str.search(/corona/i);
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
