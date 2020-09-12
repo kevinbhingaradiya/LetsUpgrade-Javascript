@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show password</title>
+    <script src="/showpass.js"></script>
+    <style>
+        .login{
+            background-color:blueviolet;
+            height: 400px;
+            width: 300px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .input{
+            margin: 3px auto;
+    align-items: center;
+    padding: 8px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-group">
+            <input type="text" class="input" placeholder="username"/>
+        </div>
+        <div class="form-group">
+            <input type="password" class="input" placeholder="password"/>
+            <button class="input" onmousedown="showPassword()" onmouseup="hidePassword()" >
+            <img src="/eye icon.png" width="20px" height="20px"/>
+            </button>
+        </div>
+        <div class="form-group">
+            <button class="input">Login</button>
+        </div>
+    </div>
+</body>
+</html> <script>  const eles=document.getElementsByClassName("input");
+   eles[2].value="text";
+}
+
+
+function hidePassword()
+{
+   const eles=document.getElementsByClassName("input");
+   eles[2].type="password";
+}</script>
